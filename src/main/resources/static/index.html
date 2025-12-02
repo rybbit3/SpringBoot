@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p id="datetime"></p>
+
+<script>
+    const now = new Date();
+    const formatted = now.toLocaleString(); // 브라우저 지역 기준으로 보기 좋게 포맷팅
+    document.getElementById("datetime").innerText = `현재 시각은: ${formatted}`;
+</script>
+</body>
+</html>
