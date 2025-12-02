@@ -18,6 +18,9 @@ public class ItemController {
         List<Item> result = itemRepository.findAll();
         model.addAttribute("items", result);
 
+        var a = new Item();
+        System.out.println(a.getTitle());
+
         return "list.html";
     }
 }

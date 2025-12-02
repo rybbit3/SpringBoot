@@ -24,6 +24,18 @@ public class ShopApplication {
 
         var a = new Item();
         System.out.println(a);
+
+        var homework = new homework();
+        homework.setName("kim");
+        homework.setAge(20);
+        System.out.println(homework.getName());
+        System.out.println(homework.getAge());
+        homework.한살더하기();
+        System.out.println(homework.getAge());
+        homework.나이설정(12);
+        System.out.println(homework.getAge());
+        homework.나이설정(100);
+        System.out.println(homework.getAge());
 	}
 
 }
